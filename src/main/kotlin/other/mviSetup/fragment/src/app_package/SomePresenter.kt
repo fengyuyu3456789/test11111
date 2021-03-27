@@ -10,7 +10,7 @@ fun somePresenter(
 ) = """package $packageName.mvp.presenter
 
 import com.jess.arms.di.scope.FragmentScope
-import android.content.Intent
+import android.os.Bundle
 import javax.inject.Inject
 import com.hlw.movie.common.base.HLWBasePresenter
 import ${packageName}.mvp.contract.${entityName}Contract

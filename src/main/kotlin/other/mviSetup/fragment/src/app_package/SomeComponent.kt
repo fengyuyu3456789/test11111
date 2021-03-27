@@ -19,6 +19,6 @@ import ${packageName}.mvp.ui.fragment.${entityName}Fragment
 @FragmentScope
 @Component(modules = arrayOf(${entityName}Module::class),dependencies = arrayOf(AppComponent::class))
 interface ${entityName}Component {
-    fun inject(activity:${entityName}Fragment)
+    fun inject(fragment:${entityName}Fragment)
 }
 """

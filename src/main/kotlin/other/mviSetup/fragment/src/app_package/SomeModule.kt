@@ -24,7 +24,7 @@ class ${entityName}Module(private val view:${entityName}Contract.View) {
     fun provide${entityName}View():${entityName}Contract.View{
         return this.view
     }
-    @ActivityScope
+    @FragmentScope
     @Provides
     fun provide${entityName}Model(model:${entityName}Model):${entityName}Contract.Model{
         return model

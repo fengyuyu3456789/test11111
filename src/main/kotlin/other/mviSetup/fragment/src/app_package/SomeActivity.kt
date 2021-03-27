@@ -9,9 +9,12 @@ fun someActivity(
         projectData: ProjectTemplateData
 ) = """package $packageName.mvp.ui.fragment
 
-import com.hlw.movie.common.base.HLWBaseFragment;
+import com.hlw.movie.common.base.HLWBaseFragment
 import com.jess.arms.di.component.AppComponent
-
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import ${packageName}.di.component.Dagger${entityName}Component
 import ${packageName}.di.module.${entityName}Module
 import ${packageName}.mvp.contract.${entityName}Contract
@@ -35,6 +38,9 @@ class ${entityName}Fragment : HLWBaseFragment<${entityName}Presenter>() , ${enti
     }
    
     override fun initTitleBarView(){
+    }
+    
+    override fun setData(data: Any?) {
     }
 }
 
