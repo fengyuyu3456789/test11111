@@ -5,7 +5,7 @@ import com.android.tools.idea.wizard.template.*
 val mviSetupTemplateFragment
     get() = template {
         revision = 3
-        name = "hlw Fragment"
+        name = "Fragment 模版"
         description = "Creates a new Fragment along layout file."
         minApi = 19
         minBuildApi = 19

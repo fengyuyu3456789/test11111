@@ -5,7 +5,7 @@ import com.android.tools.idea.wizard.template.*
 val mviSetupTemplateActivity
     get() = template {
         revision = 2
-        name = "hlw Activity"
+        name = "Activity 模版"
         description = "Creates a new activity along layout file."
         minApi = 19
         minBuildApi = 19
