@@ -3,7 +3,6 @@ package other.mviSetup.activity
 import com.android.tools.idea.wizard.template.ModuleTemplateData
 import com.android.tools.idea.wizard.template.RecipeExecutor
 import com.android.tools.idea.wizard.template.impl.activities.common.generateManifest
-import com.github.steewsc.mvisetup.listeners.MyProjectManagerListener.Companion.projectInstance
 import other.mviSetup.activity.src.app_package.*
 import java.io.File
 
@@ -14,7 +13,6 @@ fun RecipeExecutor.mviSetup(
         layoutName: String
 ) {
     val (projectData,srcOut, resOut) = moduleData
-    val project = projectInstance ?: return
 //    addAllKotlinDependencies(moduleData)
     val activityClass = "${entityName}Activity"
     val activityPresenter = "${entityName}Presenter"
