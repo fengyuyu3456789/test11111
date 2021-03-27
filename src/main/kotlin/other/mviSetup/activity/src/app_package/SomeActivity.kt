@@ -9,7 +9,7 @@ fun someActivity(
         projectData: ProjectTemplateData
 ) = """package $packageName.mvp.ui.activity
 
-import com.hlw.movie.common.base.HLWBaseActivity;
+import com.hlw.movie.common.base.HLWBaseActivity
 import com.jess.arms.di.component.AppComponent
 
 import ${packageName}.di.component.Dagger${entityName}Component
